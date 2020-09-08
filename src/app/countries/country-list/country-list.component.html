@@ -1,0 +1,10 @@
+<h4>{{title}}</h4>
+<p>Wow! There are <span>{{countries.length}}</span> countries</p>
+<div id="rainbow" class="card" style="width: 18rem;" *ngFor="let country of countries">
+  <img src={{country.flag}} class="card-img-top" alt= "This is the flag of {{country.name}}">
+  <div class="card-body">
+    <h5 class="card-title">{{country.name}}</h5>
+    <p class="card-text">Capital: {{country.capital}} <br> Region: {{country.region}}</p>
+    <a href="#" class="btn btn-primary" (click)="print()">Go somewhere</a>
+  </div>
+</div>
