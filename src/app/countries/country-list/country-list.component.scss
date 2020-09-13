@@ -12,20 +12,6 @@ span{
     text-transform: uppercase; 
 }
 
-img{
-
-	width: 300px;
-	height: 200px;
-
-}
-
-.left{
-    float: left; 
-}
-.right{
-    float: right; 
-}
-
 
 *, *::before, *::after {
 	box-sizing: border-box;
@@ -37,16 +23,25 @@ img{
 	}
 }
 
+div img{
+	padding: 1rem;
+	padding-bottom: 1rem;
+	align-self: center;
+	height: 200px;
+}
+
+.card{
+	align-self: center;
+}
+
 #rainbow {
 	
 	position: relative;
 	z-index: 0;
-	width: 400px;
 	border-radius: 10px;
-	padding: 2rem;
 	overflow: hidden;
-	width: 400px;
-	height:500px;
+	align-items: center;
+	height: 400px;
 	
 	&::before {
 		content: '';

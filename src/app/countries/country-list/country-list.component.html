@@ -1,10 +1,9 @@
 <h4>{{title}}</h4>
 <p>Wow! There are <span>{{countries.length}}</span> countries</p>
 
-
-<div *ngFor="let country of countries; let i = index;">
-  <div class="col-xs-6 left" *ngIf="i%2 == 0" id="rainbow">
-    <div class="card" style="width: 18rem;" >
+<div class="row justify-content-center" >
+  <div *ngFor="let country of countries; let i = index;">
+    <div class="card" style="width: 18rem;" id="rainbow">
       <img src={{country.flag}} class="card-img-top" alt="This is the flag of {{country.name}}">
       <div class="card-body">
         <h5 class="card-title">{{country.name}}</h5>
@@ -13,17 +12,4 @@
       </div>
     </div>
   </div>
-
-
-  <div class="col-xs-6 right" *ngIf="i%2 != 0" id="rainbow">
-    <div class="card" style="width: 18rem;" >
-      <img src={{country.flag}} class="card-img-top" alt="This is the flag of {{country.name}}">
-      <div class="card-body">
-        <h5 class="card-title">{{country.name}}</h5>
-        <p class="card-text">Capital: {{country.capital}} <br> Region: {{country.region}}</p>
-        <a href="#" class="btn btn-primary" (click)="print()">Go somewhere</a>
-      </div>
-    </div>
-  </div>
-
 </div>

@@ -1,19 +1,21 @@
-# angular-starter-kit
-Starter kit for developing web apps with Code.Hub and Angular
+# Angular exercise
+### Instructions
 
-![Logo](ngCodehub.png)
+Create a feature in your Angular app that manages countries.
 
-## Recommended Setup
+Ideally, you should create a separate Angular module that will contain one component. The component will be responsible for displaying a list of countries with the following properties:
 
-- Visual Studio Code (VSCode)
-- Node.js
-- npm
-- Git
+#### name: string;
+#### flag: string;
+#### capital: string;
+#### region: string;
 
-## Installation instructions
+Each country should be displayed as a Bootstrap card component https://getbootstrap.com/docs/4.5/components/card/. 
 
-1. Download and install [VSCode](https://code.visualstudio.com/download) editor.
-2. Download and install an **LTS** version of [Node.js](https://nodejs.org/). To verify that you have installed it correctly type the command `node -v` in a command line window and it should display the installed version of Node.js
-3. **Npm** is already included in Node.js. To verify that you have it, type the command `npm -v` in a command line window and it should display the installed npm version.
-4. If you do not already have Git installed, navigate to https://git-scm.com/downloads, download the appropriate version for your environment and install it. 
+The image of the card should display the flag of the country, the title should display the name of the country and the description should display a combination of capital and region such as:
 
+Capital: Athens
+
+Region: Europe
+
+The backend URL that you are going to use is: https://restcountries.eu/rest/v2/ 
